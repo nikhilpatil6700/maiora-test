@@ -1,0 +1,10 @@
+package com.StudentManagerment.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.StudentManagerment.entity.Student;
+
+public interface StudentRepository extends JpaRepository<Student, Integer>{
+
+	
+}

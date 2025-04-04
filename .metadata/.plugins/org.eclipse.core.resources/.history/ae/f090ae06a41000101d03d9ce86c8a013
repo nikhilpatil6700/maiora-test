@@ -1,0 +1,5 @@
+package com.StudentManagerment.repository;
+
+public interface StudentRepository {
+
+}

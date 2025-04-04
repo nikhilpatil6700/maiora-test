@@ -1,0 +1,31 @@
+package com.StudentManagerment.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.StudentManagerment.entity.Student;
+import com.StudentManagerment.repository.StudentRepository;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	@Autowired
+	private StudentRepository studentRepository;
+	
+	@Override
+	public void addStudent(Student student) {
+		studentRepository.save(student);
+
+	}
+
+	@Override
+	public List<Student> getStudentBasedOnAge() {
+		
+		
+		List<Student> all = studentRepository.findAll();
+		return null;
+	}
+
+}
